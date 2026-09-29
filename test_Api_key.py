@@ -1,6 +1,11 @@
 from openai import OpenAI
 import os
 
+"""
+.gitignore 是 Git 的忽略规则文件，用来告诉 Git：哪些文件或目录不要纳入版本控制。
+简单说，它让 Git “假装看不见”某些文件，避免把它们提交到仓库里。
+"""
+
 client = OpenAI(
     # 如果没有配置环境变量，请用阿里云百炼API Key替换：api_key="sk-xxx"
     api_key=os.getenv("DASHSCOPE_API_KEY"),
